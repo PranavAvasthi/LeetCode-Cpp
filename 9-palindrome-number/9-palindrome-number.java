@@ -9,7 +9,7 @@ class Solution {
             x = x/10;
         }
         
-        if(sum == real) {
+        if(sum==real) {
             return true;
         } else {
             return false;
