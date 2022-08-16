@@ -1,7 +1,7 @@
 class Solution {
     public boolean isPalindrome(int x) {
         int sum=0;
-        int real = x;
+        int real=x;
         
         while(x>0) {
             int rem = x%10;
