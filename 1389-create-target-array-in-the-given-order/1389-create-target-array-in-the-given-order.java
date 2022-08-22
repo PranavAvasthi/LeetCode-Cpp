@@ -8,7 +8,6 @@ class Solution {
         }
         
         int[] ans = new int[n];
-        
         for(int i=0; i<n; i++) {
             // Put Value of particular index of list in ans
             ans[i] = li.get(i);
