@@ -1,10 +1,10 @@
 class Solution {
     public int missingNumber(int[] arr) {
         int i=0;
-        while(i < arr.length) {
-            int correctIndex = arr[i];
-            if (arr[i] < arr.length && arr[i] != arr[correctIndex]) {
-                swap(arr, i, correctIndex);
+        while(i<arr.length) {
+            int correctIndex=arr[i];
+            if (arr[i]<arr.length && arr[i]!=arr[correctIndex]) {
+                swap(arr,i,correctIndex);
             } else {
                 i++;
             }
@@ -12,7 +12,7 @@ class Solution {
 
         // Search for first missing number
         for(int index=0; index<arr.length; index++) {
-            if(arr[index] != index) {
+            if(arr[index]!=index) {
                 return index;
             }
         }
@@ -20,8 +20,8 @@ class Solution {
     }
 
     void swap(int[] arr, int first, int second) {
-        int temp = arr[first];
-        arr[first] = arr[second];
-        arr[second] = temp;
+        int temp=arr[first];
+        arr[first]=arr[second];
+        arr[second]=temp;
     }
 }
